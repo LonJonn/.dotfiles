@@ -1,6 +1,24 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+    shell:
+        stdout: true
+        stderr: true
+        stdin: true
+
 - clean: ['~']
+
+- create:
+    - ~/.nvim
 
 - link:
     ~/.profile: profile
+    ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.p10k.zsh: p10k.zsh
+    ~/.Brewfile: Brewfile
 
-
+- shell:
+    - [./init/01-zsh.sh, Running Init Script 01 - Zsh]
+    - [./init/02-homebrew.sh, Running Init Script 02 - Homebrew]
