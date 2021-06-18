@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Installing Homebrew
-if [[ $(which brew) == "*not found*" ]]; then
+if [[ $(which brew) =~ "not found" ]]; then
 	echo "Installing Homebrew"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

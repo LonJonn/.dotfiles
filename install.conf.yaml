@@ -11,6 +11,7 @@
 
 - create:
     - ~/.nvim
+    - ~/.z
 
 - link:
     ~/.profile: profile
@@ -22,3 +23,4 @@
 - shell:
     - [./init/01-zsh.sh, Running Init Script 01 - Zsh]
     - [./init/02-homebrew.sh, Running Init Script 02 - Homebrew]
+    - [./init/03-node.sh, Running Init Script 03 - Node]
