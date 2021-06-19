@@ -14,13 +14,31 @@
     - ~/.z
 
 - link:
+    # Shell
     ~/.profile: profile
     ~/.zshrc: zshrc
+    # Git
     ~/.gitconfig: gitconfig
-    ~/.p10k.zsh: p10k.zsh
+    # Brew
     ~/.Brewfile: Brewfile
+    # Zsh
+    ~/.p10k.zsh: p10k.zsh
+    ~/.config/zsh/aliases.zsh: config/zsh/aliases.zsh
+    ~/.config/zsh/functions.zsh: config/zsh/functions.zsh
+    ~/.config/zsh/instant-prompt.zsh: config/zsh/instant-prompt.zsh
+    ~/.config/homebrew.zsh: config/homebrew.zsh
+    ~/.config/nvm.zsh: config/nvm.zsh
+    ~/.config/fzf.zsh: config/fzf.zsh
+    # NeoVIM
+    ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.config/nvim/settings.vim: config/nvim/settings.vim
+    ~/.config/nvim/keybinds.vim: config/nvim/keybinds.vim
+    ~/.config/nvim/plugins.vim: config/nvim/plugins.vim
+    ~/.config/nvim/plugin-configs/fzf.vim: config/nvim/plugin-configs/fzf.vim
+    ~/.config/nvim/themes/horizon.vim: config/nvim/themes/horizon.vim
 
 - shell:
     - [./init/01-zsh.sh, Running Init Script 01 - Zsh]
     - [./init/02-homebrew.sh, Running Init Script 02 - Homebrew]
     - [./init/03-node.sh, Running Init Script 03 - Node]
+    - [./init/04-neovim.sh, Running Init Script 04 - NeoVIM]
