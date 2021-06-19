@@ -6,7 +6,6 @@ if [[ $(which brew) =~ "not found" ]]; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-
 	if [[ $(uname) == "Linux" ]]; then
 		echo "Installing build-essentials"
 		sudo apt install build-essential

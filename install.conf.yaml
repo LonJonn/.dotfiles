@@ -2,16 +2,13 @@
     link:
         create: true
         relink: true
+        force: true
     shell:
         stdout: true
         stderr: true
         stdin: true
 
 - clean: ['~']
-
-- create:
-    - ~/.nvim
-    - ~/.z
 
 - link:
     # Shell
@@ -42,3 +39,4 @@
     - [./init/02-homebrew.sh, Running Init Script 02 - Homebrew]
     - [./init/03-node.sh, Running Init Script 03 - Node]
     - [./init/04-neovim.sh, Running Init Script 04 - NeoVIM]
+    - [./init/05-other.sh, Running Init Script 05 - Other]
