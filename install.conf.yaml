@@ -8,6 +8,9 @@
         stderr: true
         stdin: true
 
+- create:
+        - ~/.ssh
+
 - clean: ['~']
 
 - link:
