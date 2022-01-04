@@ -22,6 +22,7 @@ plugins=(
   npm
   nvm
   postgres
+  yarn
   z
   zsh-syntax-highlighting
   zsh-autosuggestions
