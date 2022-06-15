@@ -22,3 +22,10 @@ set laststatus=2	" Always display status line
 " set noshowmode
 " set timeoutlen=100
 " set incsearch
+
+" Yank Highlight
+
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=500}
+augroup END

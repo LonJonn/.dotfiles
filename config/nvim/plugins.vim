@@ -2,6 +2,7 @@ call plug#begin()
 
 Plug 'junegunn/fzf'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-surround'
 
 
 " To add
