@@ -1,3 +1,6 @@
+# Fig pre block. Keep at the top of this file.
+[[ ! $(which fig) =~ "not found" ]] && source "$HOME/.fig/shell/zshrc.pre.zsh"
+
 # P10k Instant Prompt
 source ~/.config/zsh/instant-prompt.zsh
 
@@ -39,3 +42,6 @@ source ~/.config/nvm.zsh
 source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/functions.zsh
 source ~/.config/fzf.zsh
+
+# Fig post block. Keep at the bottom of this file.
+[[ ! $(which fig) =~ "not found" ]] && source "$HOME/.fig/shell/zshrc.post.zsh"
